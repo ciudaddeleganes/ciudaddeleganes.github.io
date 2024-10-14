@@ -115,6 +115,10 @@ a {
     li {
         margin: 10px 15px;
     }
+
+    .twitter-tweet.twitter-tweet-rendered {
+        width: 50%!important;
+    }
 }
 .content {
     padding: 20px;
@@ -127,4 +131,21 @@ footer {
     position: relative;
     bottom: 0;
     width: calc(100% - 20px);
+}
+
+.social-media {
+    margin-bottom: 10px; /* Espacio debajo de los iconos */
+}
+
+.social-media a {
+    margin: 0 10px; /* Espacio entre los iconos */
+    display: inline-block; /* Asegurar que los enlaces sean bloques en línea */
+}
+
+.social-media img {
+    transition: transform 0.3s; /* Transición suave para hover */
+}
+
+.social-media img:hover {
+    transform: scale(1.1); /* Efecto de hover */
 }
