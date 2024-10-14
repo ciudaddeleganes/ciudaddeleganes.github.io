@@ -55,6 +55,9 @@ a {
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 1.6em;
+    }
     .overlay {
         position: fixed; /* Fijar la capa */
         top: 170px;
@@ -123,5 +126,5 @@ footer {
     padding: 10px;
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: calc(100% - 20px);
 }
