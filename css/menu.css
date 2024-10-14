@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff002b; /* Rojo */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 150px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 50px;
+    padding-right: 10px;
+}
+
+nav {
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        position: fixed; /* Fijar la capa */
+        top: 170px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(200, 16, 46, 0.5); /* Color rojo semitransparente */
+        display: none; /* Ocultar por defecto */
+        z-index: 10; /* Asegurarse de que esté por encima del contenido */
+    }
+
+    body.no-scroll {
+        overflow: hidden; /* Deshabilitar scroll */
+    }
+
+    a {
+        color: #ff002b;
+    }
+
+    ul {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column;
+        position: absolute;
+        background-color: #FFF; /* Rojo */
+        top: 50px;
+        right: 0;
+        width: 200px;
+    }
+
+    ul.active {
+        display: flex; /* Mostrar el menú si está activo */
+        transition: max-height 0.3s ease-in-out; 
+    }
+
+    .toggle {
+        display: block; /* Mostrar el icono de hamburguesa */
+    }
+
+    ul.active {
+        display: flex;
+        transition: max-height 0.3s ease-in-out;
+        height: 100%;
+        z-index: 99;
+        position: fixed;
+        top: 150px;
+        padding: 50px;
+        background-color: white; /* Fondo blanco del div */
+        padding: 20px;
+        border-radius: 5px; /* Esquinas redondeadas */
+        box-shadow: 
+            -5px -5px 10px rgba(200, 16, 46, 0.5), /* Sombra en la parte superior e izquierda */
+            5px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    li {
+        margin: 10px 15px;
+    }
+}
+.content {
+    padding: 20px;
+}
+footer {
+    background-color: #ff002b; /* Rojo */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - CD Ciudad de Leganés</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <header>
+        <div class="overlay" id="overlay"></div>
+        <div class="logo">
+            <img src="../images/escudo nuevo.png" alt="Logo CD Ciudad de Leganés">
+            <h1>CD Ciudad de Leganés</h1>
+        </div>
+        <nav>
+            <div class="toggle" id="toggle">
+                &#9776; <!-- Icono de hamburguesa -->
+            </div>
+            <ul id="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="pages/contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta, no dudes en enviarnos un mensaje.</p>
+        <form action="mailto:raul9m86@gmail.com" method="post" enctype="text/plain">
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 CD Ciudad de Leganés. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

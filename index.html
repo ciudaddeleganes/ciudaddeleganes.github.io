@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CD Ciudad de Leganés</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <div class="overlay" id="overlay"></div>
     <header>
-        <div class="logo">CD Ciudad de Leganés</div>
+        <div class="logo">
+            <img src="images/escudo nuevo.png" alt="Logo CD Ciudad de Leganés" style="height: 50px;">
+            <h1>CD Ciudad de Leganés</h1>
+        </div>
         <nav>
             <div class="toggle" id="toggle">
                 &#9776; <!-- Icono de hamburguesa -->
@@ -17,20 +22,13 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#equipo">Equipo</a></li>
                 <li><a href="#noticias">Noticias</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="pages/contact.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <div class="content">
-        <h1>Bienvenido al CD Ciudad de Leganés</h1>
-        <p>Este es un ejemplo de un menú responsive.</p>
+        <h2>Bienvenido al CD Ciudad de Leganés</h2>
     </div>
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#equipo">Equipo</a>
-        <a href="#noticias">Noticias</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
     <div class="content">
         <section id="inicio">
             <h3>Bienvenido al CD Ciudad de Leganés</h3>
@@ -69,6 +67,7 @@
     <footer>
         <p>&copy; 2024 CD Ciudad de Leganés. Todos los derechos reservados.</p>
     </footer>
-    <script src="js/scripts.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/gallery.js"></script>
 </body>
 </html>
